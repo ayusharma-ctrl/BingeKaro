@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    flex-direction: row;
+    position: sticky;
+    top:0px;
+    
+}
+
+#div1{
+    /* display: inline-block; */
+    padding-left: 3vw;
+    /* padding-right: 60vw; */
+    margin-right: auto;
+}
+
+.div2{
+    /* display: inline-block; */
+    padding-right: 3vw;
+    padding-left: 3vw;
+    /* float: left; */
+    margin: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#support{
+    height: 8vh;
+    background-color: pink;
+    text-align: center;
+}
+
+@keyframes textBlink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+
+#a2{
+    color: blue;
+    animation-name: textBlink;
+    animation: textBlink 1s linear infinite;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    margin: 9vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/website-background-3");
+    /* opacity: 0.75 ; */
+    color: white;
+}
+
+.div3{
+    /* background-color: red; */
+    /* display: inline-block; */
+    height: auto;
+    width: auto;
+    text-align: center;
+    /* top: 10vh; */
+}
+
+h1{
+    padding: 1vw;
+    font-size: 7vh;
+}
+p{
+    padding: 2vw;
+    font-size: 3vh;
+}
+
+li{
+    list-style-type: none;
+    padding: 2vw;
+}
+
+span{
+    color: rgb(241, 50, 190);
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin: 2vw;
+}
+
+#whatsapp{
+    color: green;
+    animation-name: textBlink;
+    animation: textBlink 1s linear infinite;
+    font-size: larger;
+}
+
+@keyframes textBlink{
+    /* 0%{opacity: 0;} */
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+
+footer{
+    margin-top: auto;
+    padding: 3vw;
+    background-color: #333;
+    color: white;
+    grid-template-rows: 2;
+    grid-auto-rows: auto;
+}
+
+h2{
+    padding-left: 2vw;
+    color: orangered;
+}
+
+#footer_para{
+    font-size: 17px;
+}
+
+.grid-container{
+    display: grid;
+    column-gap: 2vw;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #222; */
+    /* padding: 10px; */
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.grid-item{
+    background-color: #444;
+    border: 1px solid white;
+    padding: auto;;
+    text-align: center;
+}
+

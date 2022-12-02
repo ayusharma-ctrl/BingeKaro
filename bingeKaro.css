@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.brand-name{
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    20%,24%,55% {
+      color: #111;
+      text-shadow: none;
+    }
+    
+    0%,19%,21%,23%,25%,54%,56%,100% {
+        /*color: #fccaff;
+        text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; color: #fff6a9;
+    }
+  }
+
+.main{
+    background-color: black;
+    position: absolute;
+    height: 280%;
+    width: 100vw;
+    background: #222;
+    background-image: repeating-linear-gradient(to bottom, transparent 7px,  rgba(0, 0, 0, 0.8) 9px,  rgba(0, 0, 0, 0.8) 13px,  transparent 13px );
+}
+
+.support-header{
+    position: absolute;
+    /* background-color: #ff8d00; */
+    top: 9vh;
+    height: 21vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.support-neon{
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+.carousel-1{
+    /* background-color: aqua; */
+    position: absolute;
+    display: flex;
+    top: 30vh;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel-2{
+    /* background-color: orchid; */
+    position:absolute;
+    width: 70vw;
+    height: 55vh;
+    z-index: 1;
+}
+
+.carousel-item{
+    width: 100%;
+    height:55vh;
+    border: 2px solid orangered;
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 80%;
+    background-image: none;
+    background-image: url("Images/LiveMatch.jpg");
+}
+
+.carousel-img1{
+    background-image: url("Images/fifa.jpg");
+}
+
+.carousel-img2{
+    background-image: url("Images/BCCI.jpg");
+}
+
+.carousel-img3{
+    background-image: url("Images/T10-league.webp");
+}
+
+.carousel-img:hover{
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.gap{
+    position: absolute;
+    /* background-color: #ff8d00; */
+    height: 10vh;
+    top: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: block;
+
+}
+
+h3{
+    padding: 10px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  color: lightpink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+
+@keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+
+.drama{
+    position: absolute;
+    /* background-color: #ff8d00; */
+    margin-top: 2vw;
+    height: 42vw;
+    top: 110vh;
+    width: 100%;
+}
+
+.drama2{
+    position: absolute;
+    /* background-color: #ff8d00; */
+    height: 42vw;
+    top: 190vh;
+    width: 100%;
+}
+
+.scroll-cards{
+    display: flex;
+    padding: 0vw 0px;
+    margin-right: 4.5vw;
+    margin-left: 4.5vw;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 4.5vw;
+    
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20%;
+    margin-right: 4.5vw;
+    gap: 4.5vw;
+    padding: 1vw;
+    /* border: 2px solid #ffff; */
+    scroll-snap-align: start;
+    transition: all 0.3s;
+}
+
+.movie{
+    background-image: url("Movies/images/actionhero.webp");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie1{
+    background-image: url("Movies/images/Goodbye.jfif");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie2{
+    background-image: url("Movies/images/freddy.webp");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie3{
+    background-image: url("Movies/images/Tathastu.jpg");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie4{
+    background-image: url("Movies/images/Monica\ O\ My\ Darling\ 2022");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie5{
+    background-image: url("Movies/images/drishyam");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cards:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .cards:hover {
+    background-color: white;
+    border: 5px solid palevioletred;
+  }
+
+  .scroll-cards::-webkit-scrollbar {
+    height: 12px;
+    width: 50vw;
+    margin-right: 4.5vw;
+  }
+  
+  .scroll-cards::-webkit-scrollbar-thumb,
+  .scroll-cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .scroll-cards::-webkit-scrollbar-thumb {
+    background-color: red;
+  }
+  
+  .scroll-cards::-webkit-scrollbar-track {
+    background-color: white;
+  }
+
+
+@media only screen and (max-width: 600px){
+    .support-header{
+        height: 15vh;
+    }
+
+    .carousel-1{
+        top: 24vh;
+        height: 25vh;
+    }
+    
+    .carousel-2{
+        width: 86vw;
+        height: 20vh; 
+    }
+
+    .carousel-item{
+        height:20vh;
+    }
+
+    .gap{
+        top: 48vh;
+    }
+
+    .drama{
+        top: 58vh;
+        height: 25vh;
+    }
+
+    .scroll-cards{
+        height: 15vh;
+    }
+
+    .drama2{
+        top: 83vh;
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    .drama2{
+        top: 140vh;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1400px){
+    .drama2{
+        top: 160vh;
+    }
+}
+
+
+
+
+
+.tv{
+    background-image: url("TV shows/images/Khakee.jpg");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv1{
+    background-image: url("TV shows/images/hostel-daze");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv2{
+    background-image: url("TV shows/images/collegeGirls");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv3{
+    background-image: url("TV shows/images/My\ Dress-Up\ Darling\ S01\ 2022.jpg");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv4{
+    background-image: url("TV shows/images/extraordinary");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
