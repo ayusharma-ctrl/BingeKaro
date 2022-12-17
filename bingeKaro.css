@@ -189,11 +189,20 @@ h3{
     flex-direction: column;
     flex: 0 0 20%;
     margin-right: 4.5vw;
+    margin-bottom: 4vw;
     gap: 4.5vw;
     padding: 1vw;
     /* border: 2px solid #ffff; */
     scroll-snap-align: start;
     transition: all 0.3s;
+}
+
+.movie0{
+    background-image: url("Movies/images/govinda.webp");
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .movie{
